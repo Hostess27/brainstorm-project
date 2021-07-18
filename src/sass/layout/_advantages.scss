@@ -20,6 +20,12 @@
 }
 
 .advantages-list-item{
+    @media screen and(max-width:767px){
+        &:not(:last-child){
+        padding-bottom: 38px;}}
+
+    
+     
     @media screen and(max-width:767px) {
         flex-basis: calc(100%/3 - 80px);
         max-width: 230px;
@@ -33,9 +39,7 @@
         flex-basis: calc(100%/3 - 20px);
     }
     
-    &:not(:last-child){
-        padding-bottom: 38px;}
-     
+    
 }
 
 .advantages-item-title{
