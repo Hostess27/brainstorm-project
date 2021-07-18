@@ -20,13 +20,17 @@
 }
 
 .advantages-list-item{
-    width: 290px;
+    @media screen and(max-width:767px) {
+        flex-basis: calc(100%/3 - 80px);
+        max-width: 230px;
+    }
 
     @media screen and(min-width:768px) {
-        flex-basis: calc(100%/3 - 80px);
+        flex-basis: calc(100%/3 - 53px);
+        
     }
     @media screen and(min-width:1280px) {
-        flex-basis: calc(100%/3 - 60px);
+        flex-basis: calc(100%/3 - 20px);
     }
     
     &:not(:last-child){
